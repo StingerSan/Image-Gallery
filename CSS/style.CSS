@@ -1,4 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+section.frontPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+section div {
+  width: 50vw;
+  height: 50vh;
+  background-color: black;
+  border: 4px none white;
+}
+
+div:nth-child(1) {
+  border-style: ridge none none ridge;
+  -webkit-box-shadow: 0px 0px 0px red;
+          box-shadow: 0px 0px 0px red;
+}
+
+div:nth-child(2) {
+  border-style: ridge ridge none none;
+  -webkit-box-shadow: 0px 0px 0px red;
+          box-shadow: 0px 0px 0px red;
+}
+
+div:nth-child(3) {
+  border-style: none none ridge ridge;
+  -webkit-box-shadow: 0px 0px 0px red;
+          box-shadow: 0px 0px 0px red;
+}
+
+div:nth-child(4) {
+  border-style: none ridge ridge none;
+  -webkit-box-shadow: 0px 0px 0px red;
+          box-shadow: 0px 0px 0px red;
+}
+
+button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20%;
+  border: 5px inset white;
+  -webkit-box-shadow: 0px 0px 10px red;
+          box-shadow: 0px 0px 10px red;
+  width: 15vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
