@@ -19,39 +19,39 @@ section.frontPage {
   height: 100vh;
 }
 
-section div {
+section.frontPage div {
   width: 50vw;
   height: 50vh;
   background-color: black;
   border: 4px none white;
 }
 
-div:nth-child(1) {
+section.frontPage div:nth-of-type(1) {
   border-style: ridge none none ridge;
   -webkit-box-shadow: 0px 0px 0px red;
           box-shadow: 0px 0px 0px red;
 }
 
-div:nth-child(2) {
+section.frontPage div:nth-of-type(2) {
   border-style: ridge ridge none none;
   -webkit-box-shadow: 0px 0px 0px red;
           box-shadow: 0px 0px 0px red;
 }
 
-div:nth-child(3) {
+section.frontPage div:nth-of-type(3) {
   border-style: none none ridge ridge;
   -webkit-box-shadow: 0px 0px 0px red;
           box-shadow: 0px 0px 0px red;
 }
 
-div:nth-child(4) {
+section.frontPage div:nth-of-type(4) {
   border-style: none ridge ridge none;
   -webkit-box-shadow: 0px 0px 0px red;
           box-shadow: 0px 0px 0px red;
 }
 
 button {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -64,10 +64,18 @@ button {
   height: 10vh;
   background-color: black;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
+  font-family: 'zen tokyo zoo', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+button:hover ~ div:nth-of-type(1) {
+  top: -100%;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,25 +8,26 @@ section.frontPage
     flex-wrap: wrap
     width: 100vw
     height: 100vh
-section div
-    width: 50vw
-    height: 50vh
-    background-color: black
-    border: 4px none white
-div:nth-child(1)
-    border-style: ridge none none ridge
-    box-shadow: 0px 0px 0px red
-div:nth-child(2)
-    border-style: ridge ridge none none
-    box-shadow: 0px 0px 0px red
-div:nth-child(3)
-    border-style: none none ridge ridge
-    box-shadow: 0px 0px 0px red
-div:nth-child(4)
-    border-style: none ridge ridge none
-    box-shadow: 0px 0px 0px red
+    div
+
+        width: 50vw
+        height: 50vh
+        background-color: black
+        border: 4px none white
+    div:nth-of-type(1)
+        border-style: ridge none none ridge
+        box-shadow: 0px 0px 0px red
+    div:nth-of-type(2)
+        border-style: ridge ridge none none
+        box-shadow: 0px 0px 0px red
+    div:nth-of-type(3)
+        border-style: none none ridge ridge
+        box-shadow: 0px 0px 0px red
+    div:nth-of-type(4)
+        border-style: none ridge ridge none
+        box-shadow: 0px 0px 0px red
 button
-    position: fixed
+    position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
@@ -37,6 +38,12 @@ button
     height: 10vh
     background-color: black
     color: white
-    font-size: 25px
+    font-size: 22px
+    font-family: 'zen tokyo zoo', cursive
+    text-transform: uppercase
+    letter-spacing: 1px
 button:hover
     cursor: pointer
+button:hover ~ div:nth-of-type(1)
+    top: -100%
+    left: 0
