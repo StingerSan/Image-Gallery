@@ -5,7 +5,12 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #9b9ec9;
+}
+
 section.frontPage {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +29,8 @@ section.frontPage div {
   height: 50vh;
   background-color: black;
   border: 4px none white;
+  -webkit-transition: 1.5s linear;
+  transition: 1.5s linear;
 }
 
 section.frontPage div:nth-of-type(1) {
@@ -68,14 +75,40 @@ button {
   font-family: 'zen tokyo zoo', cursive;
   text-transform: uppercase;
   letter-spacing: 1px;
+  z-index: 1;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 1.5s linear;
+  transition: 1.5s linear;
 }
 
 button:hover {
   cursor: pointer;
+  width: 0;
+  height: 0;
+  font-size: 0px;
+  border: 0px inset white;
+  -webkit-box-shadow: 0px 0px 0px red;
+          box-shadow: 0px 0px 0px red;
 }
 
 button:hover ~ div:nth-of-type(1) {
-  top: -100%;
-  left: 0;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+
+button:hover ~ div:nth-of-type(2) {
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+button:hover ~ div:nth-of-type(3) {
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+button:hover ~ div:nth-of-type(4) {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
 }
 /*# sourceMappingURL=style.css.map */

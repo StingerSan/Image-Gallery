@@ -2,18 +2,21 @@
     padding: 0
     margin: 0
     box-sizing: border-box
+body
+    background-color: #9b9ec9
 section.frontPage
+    overflow: hidden
     display: flex
     flex-direction: row
     flex-wrap: wrap
     width: 100vw
     height: 100vh
     div
-
         width: 50vw
         height: 50vh
         background-color: black
         border: 4px none white
+        transition: 1.5s linear
     div:nth-of-type(1)
         border-style: ridge none none ridge
         box-shadow: 0px 0px 0px red
@@ -42,8 +45,22 @@ button
     font-family: 'zen tokyo zoo', cursive
     text-transform: uppercase
     letter-spacing: 1px
+    z-index: 1
+    transform-origin: center
+    transition: 1.5s linear
 button:hover
     cursor: pointer
+    width: 0
+    height: 0
+    font-size: 0px
+    border: 0px inset white
+    box-shadow: 0px 0px 0px red
+
 button:hover ~ div:nth-of-type(1)
-    top: -100%
-    left: 0
+    transform: translate(0,-100%)
+button:hover ~ div:nth-of-type(2)
+    transform: translate(100%,0)
+button:hover ~ div:nth-of-type(3)
+    transform: translate(-100%,0)
+button:hover ~ div:nth-of-type(4)
+    transform: translate(0,100%)
