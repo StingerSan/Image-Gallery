@@ -29,40 +29,34 @@ section.frontPage div {
   height: 50vh;
   background-color: black;
   border: 4px none white;
-  -webkit-transition: 1.5s linear;
-  transition: 1.5s linear;
+  -webkit-box-shadow: inset 0px 0px 0px red;
+          box-shadow: inset 0px 0px 0px red;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
 }
 
 section.frontPage div:nth-of-type(1) {
   border-style: ridge none none ridge;
-  -webkit-box-shadow: 0px 0px 0px red;
-          box-shadow: 0px 0px 0px red;
 }
 
 section.frontPage div:nth-of-type(2) {
   border-style: ridge ridge none none;
-  -webkit-box-shadow: 0px 0px 0px red;
-          box-shadow: 0px 0px 0px red;
 }
 
 section.frontPage div:nth-of-type(3) {
   border-style: none none ridge ridge;
-  -webkit-box-shadow: 0px 0px 0px red;
-          box-shadow: 0px 0px 0px red;
 }
 
 section.frontPage div:nth-of-type(4) {
   border-style: none ridge ridge none;
-  -webkit-box-shadow: 0px 0px 0px red;
-          box-shadow: 0px 0px 0px red;
 }
 
 button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   border-radius: 20%;
   border: 5px inset white;
   -webkit-box-shadow: 0px 0px 10px red;
@@ -71,21 +65,21 @@ button {
   height: 10vh;
   background-color: black;
   color: white;
-  font-size: 22px;
+  font-size: 28px;
   font-family: 'zen tokyo zoo', cursive;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   z-index: 1;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transition: 1.5s linear;
-  transition: 1.5s linear;
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
 }
 
 button:hover {
   cursor: pointer;
-  width: 0;
-  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   font-size: 0px;
   border: 0px inset white;
   -webkit-box-shadow: 0px 0px 0px red;
@@ -95,20 +89,28 @@ button:hover {
 button:hover ~ div:nth-of-type(1) {
   -webkit-transform: translate(0, -100%);
           transform: translate(0, -100%);
+  -webkit-box-shadow: inset -10px -10px 20px red;
+          box-shadow: inset -10px -10px 20px red;
 }
 
 button:hover ~ div:nth-of-type(2) {
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
+  -webkit-box-shadow: inset 10px -10px 20px red;
+          box-shadow: inset 10px -10px 20px red;
 }
 
 button:hover ~ div:nth-of-type(3) {
   -webkit-transform: translate(-100%, 0);
           transform: translate(-100%, 0);
+  -webkit-box-shadow: inset -10px 10px 20px red;
+          box-shadow: inset -10px 10px 20px red;
 }
 
 button:hover ~ div:nth-of-type(4) {
   -webkit-transform: translate(0, 100%);
           transform: translate(0, 100%);
+  -webkit-box-shadow: inset 10px 10px 20px red;
+          box-shadow: inset 10px 10px 20px red;
 }
 /*# sourceMappingURL=style.css.map */

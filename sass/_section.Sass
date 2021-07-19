@@ -16,24 +16,21 @@ section.frontPage
         height: 50vh
         background-color: black
         border: 4px none white
-        transition: 1.5s linear
+        box-shadow: inset 0px 0px 0px red
+        transition: 3s ease-in-out
     div:nth-of-type(1)
         border-style: ridge none none ridge
-        box-shadow: 0px 0px 0px red
     div:nth-of-type(2)
         border-style: ridge ridge none none
-        box-shadow: 0px 0px 0px red
     div:nth-of-type(3)
         border-style: none none ridge ridge
-        box-shadow: 0px 0px 0px red
     div:nth-of-type(4)
         border-style: none ridge ridge none
-        box-shadow: 0px 0px 0px red
 button
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%) scale(1)
     border-radius: 20%
     border: 5px inset white
     box-shadow: 0px 0px 10px red
@@ -41,26 +38,29 @@ button
     height: 10vh
     background-color: black
     color: white
-    font-size: 22px
+    font-size: 28px
     font-family: 'zen tokyo zoo', cursive
     text-transform: uppercase
-    letter-spacing: 1px
+    letter-spacing: 5px
     z-index: 1
-    transform-origin: center
-    transition: 1.5s linear
+    transition: 3s linear
 button:hover
     cursor: pointer
-    width: 0
-    height: 0
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%) scale(0.0)
     font-size: 0px
     border: 0px inset white
     box-shadow: 0px 0px 0px red
-
 button:hover ~ div:nth-of-type(1)
     transform: translate(0,-100%)
+    box-shadow: inset -10px -10px 20px red
 button:hover ~ div:nth-of-type(2)
     transform: translate(100%,0)
+    box-shadow: inset 10px -10px 20px red
 button:hover ~ div:nth-of-type(3)
     transform: translate(-100%,0)
+    box-shadow: inset -10px 10px 20px red
 button:hover ~ div:nth-of-type(4)
     transform: translate(0,100%)
+    box-shadow: inset 10px 10px 20px red
