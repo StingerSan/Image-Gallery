@@ -31,23 +31,29 @@ section.frontPage div {
   border: 4px none white;
   -webkit-box-shadow: inset 0px 0px 0px red;
           box-shadow: inset 0px 0px 0px red;
-  -webkit-transition: 3s ease-in-out;
-  transition: 3s ease-in-out;
 }
 
 section.frontPage div:nth-of-type(1) {
+  -webkit-animation: RedBordersOne 5s 0.5s linear;
+          animation: RedBordersOne 5s 0.5s linear;
   border-style: ridge none none ridge;
 }
 
 section.frontPage div:nth-of-type(2) {
+  -webkit-animation: RedBordersTwo 5s 0.5s linear;
+          animation: RedBordersTwo 5s 0.5s linear;
   border-style: ridge ridge none none;
 }
 
 section.frontPage div:nth-of-type(3) {
+  -webkit-animation: RedBordersThree 5s 0.5s linear;
+          animation: RedBordersThree 5s 0.5s linear;
   border-style: none none ridge ridge;
 }
 
 section.frontPage div:nth-of-type(4) {
+  -webkit-animation: RedBordersFour 5s 0.5s linear;
+          animation: RedBordersFour 5s 0.5s linear;
   border-style: none ridge ridge none;
 }
 
@@ -59,8 +65,8 @@ button {
           transform: translate(-50%, -50%) scale(1);
   border-radius: 20%;
   border: 5px inset white;
-  -webkit-box-shadow: 0px 0px 10px red;
-          box-shadow: 0px 0px 10px red;
+  -webkit-box-shadow: 0px 0px 0px red;
+          box-shadow: 0px 0px 0px red;
   width: 15vw;
   height: 10vh;
   background-color: black;
@@ -70,47 +76,229 @@ button {
   text-transform: uppercase;
   letter-spacing: 5px;
   z-index: 1;
-  -webkit-transition: 3s linear;
-  transition: 3s linear;
+  -webkit-animation: ButtonAnimation 3.5s ease both;
+          animation: ButtonAnimation 3.5s ease both;
 }
 
-button:hover {
-  cursor: pointer;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
-  font-size: 0px;
-  border: 0px inset white;
-  -webkit-box-shadow: 0px 0px 0px red;
-          box-shadow: 0px 0px 0px red;
+@-webkit-keyframes RedBordersOne {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset -10px -10px 20px red;
+            box-shadow: inset -10px -10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset -10px -10px 20px red;
+            box-shadow: inset -10px -10px 20px red;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
 }
 
-button:hover ~ div:nth-of-type(1) {
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-  -webkit-box-shadow: inset -10px -10px 20px red;
-          box-shadow: inset -10px -10px 20px red;
+@keyframes RedBordersOne {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset -10px -10px 20px red;
+            box-shadow: inset -10px -10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset -10px -10px 20px red;
+            box-shadow: inset -10px -10px 20px red;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
 }
 
-button:hover ~ div:nth-of-type(2) {
-  -webkit-transform: translate(100%, 0);
-          transform: translate(100%, 0);
-  -webkit-box-shadow: inset 10px -10px 20px red;
-          box-shadow: inset 10px -10px 20px red;
+@-webkit-keyframes RedBordersTwo {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset 10px -10px 20px red;
+            box-shadow: inset 10px -10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 10px -10px 20px red;
+            box-shadow: inset 10px -10px 20px red;
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
 }
 
-button:hover ~ div:nth-of-type(3) {
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  -webkit-box-shadow: inset -10px 10px 20px red;
-          box-shadow: inset -10px 10px 20px red;
+@keyframes RedBordersTwo {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset 10px -10px 20px red;
+            box-shadow: inset 10px -10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 10px -10px 20px red;
+            box-shadow: inset 10px -10px 20px red;
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
 }
 
-button:hover ~ div:nth-of-type(4) {
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  -webkit-box-shadow: inset 10px 10px 20px red;
-          box-shadow: inset 10px 10px 20px red;
+@-webkit-keyframes RedBordersThree {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset -10px 10px 20px red;
+            box-shadow: inset -10px 10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset -10px 10px 20px red;
+            box-shadow: inset -10px 10px 20px red;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+
+@keyframes RedBordersThree {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset -10px 10px 20px red;
+            box-shadow: inset -10px 10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset -10px 10px 20px red;
+            box-shadow: inset -10px 10px 20px red;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+
+@-webkit-keyframes RedBordersFour {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset 10px 10px 20px red;
+            box-shadow: inset 10px 10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 10px 10px 20px red;
+            box-shadow: inset 10px 10px 20px red;
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+
+@keyframes RedBordersFour {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: inset 10px 10px 20px red;
+            box-shadow: inset 10px 10px 20px red;
+  }
+  51% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 10px 10px 20px red;
+            box-shadow: inset 10px 10px 20px red;
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+
+@-webkit-keyframes ButtonAnimation {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px red;
+            box-shadow: 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 50px red;
+            box-shadow: 0px 0px 50px red;
+  }
+  51% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    font-size: 28px;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    font-size: 0px;
+    -webkit-box-shadow: 0px 0px 50px red;
+            box-shadow: 0px 0px 50px red;
+  }
+}
+
+@keyframes ButtonAnimation {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px red;
+            box-shadow: 0px 0px 0px red;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 50px red;
+            box-shadow: 0px 0px 50px red;
+  }
+  51% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    font-size: 28px;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    font-size: 0px;
+    -webkit-box-shadow: 0px 0px 50px red;
+            box-shadow: 0px 0px 50px red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
