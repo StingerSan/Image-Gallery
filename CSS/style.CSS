@@ -24,7 +24,7 @@ section.frontPage {
   height: 100vh;
 }
 
-section.frontPage div {
+section.frontPage div.DivAnimation {
   width: 50vw;
   height: 50vh;
   background-color: black;
@@ -57,7 +57,7 @@ section.frontPage div:nth-of-type(4) {
   border-style: none ridge ridge none;
 }
 
-button {
+button.ButtonAnimation {
   position: absolute;
   top: 50%;
   left: 50%;
