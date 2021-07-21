@@ -1,4 +1,4 @@
-const buttonClick = document.querySelector('.ButtonAnimation')
+const buttonClick = document.querySelector('.BtnAnimation')
 const DivMove = document.querySelector('.DivAnimation')
 
 function animation() {
