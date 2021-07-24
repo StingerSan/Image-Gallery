@@ -24,7 +24,7 @@ section.frontPage {
   height: 100vh;
 }
 
-section.frontPage div.DivAnimation {
+section.frontPage div {
   width: 50vw;
   height: 50vh;
   background-color: black;
@@ -34,30 +34,22 @@ section.frontPage div.DivAnimation {
 }
 
 section.frontPage div:nth-of-type(1) {
-  -webkit-animation: RedBordersOne 5s 0.5s linear;
-          animation: RedBordersOne 5s 0.5s linear;
   border-style: ridge none none ridge;
 }
 
 section.frontPage div:nth-of-type(2) {
-  -webkit-animation: RedBordersTwo 5s 0.5s linear;
-          animation: RedBordersTwo 5s 0.5s linear;
   border-style: ridge ridge none none;
 }
 
 section.frontPage div:nth-of-type(3) {
-  -webkit-animation: RedBordersThree 5s 0.5s linear;
-          animation: RedBordersThree 5s 0.5s linear;
   border-style: none none ridge ridge;
 }
 
 section.frontPage div:nth-of-type(4) {
-  -webkit-animation: RedBordersFour 5s 0.5s linear;
-          animation: RedBordersFour 5s 0.5s linear;
   border-style: none ridge ridge none;
 }
 
-button.BtnAnimation {
+button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -76,8 +68,39 @@ button.BtnAnimation {
   text-transform: uppercase;
   letter-spacing: 5px;
   z-index: 1;
+}
+
+button:hover {
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.BtnAnimation {
   -webkit-animation: ButtonAnimation 3.5s ease both;
           animation: ButtonAnimation 3.5s ease both;
+}
+
+.DivAnimationOne {
+  -webkit-animation: RedBordersOne 5s 0.5s linear;
+          animation: RedBordersOne 5s 0.5s linear;
+}
+
+.DivAnimationTwo {
+  -webkit-animation: RedBordersTwo 5s 0.5s linear;
+          animation: RedBordersTwo 5s 0.5s linear;
+}
+
+.DivAnimationThree {
+  -webkit-animation: RedBordersThree 5s 0.5s linear;
+          animation: RedBordersThree 5s 0.5s linear;
+}
+
+.DivAnimationFour {
+  -webkit-animation: RedBordersFour 5s 0.5s linear;
+          animation: RedBordersFour 5s 0.5s linear;
 }
 
 @-webkit-keyframes RedBordersOne {
