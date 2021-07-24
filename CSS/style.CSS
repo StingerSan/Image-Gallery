@@ -84,23 +84,23 @@ button:hover {
 }
 
 .DivAnimationOne {
-  -webkit-animation: RedBordersOne 5s 0.5s linear;
-          animation: RedBordersOne 5s 0.5s linear;
+  -webkit-animation: RedBordersOne 5s 0.5s linear both;
+          animation: RedBordersOne 5s 0.5s linear both;
 }
 
 .DivAnimationTwo {
-  -webkit-animation: RedBordersTwo 5s 0.5s linear;
-          animation: RedBordersTwo 5s 0.5s linear;
+  -webkit-animation: RedBordersTwo 5s 0.5s linear both;
+          animation: RedBordersTwo 5s 0.5s linear both;
 }
 
 .DivAnimationThree {
-  -webkit-animation: RedBordersThree 5s 0.5s linear;
-          animation: RedBordersThree 5s 0.5s linear;
+  -webkit-animation: RedBordersThree 5s 0.5s linear both;
+          animation: RedBordersThree 5s 0.5s linear both;
 }
 
 .DivAnimationFour {
-  -webkit-animation: RedBordersFour 5s 0.5s linear;
-          animation: RedBordersFour 5s 0.5s linear;
+  -webkit-animation: RedBordersFour 5s 0.5s linear both;
+          animation: RedBordersFour 5s 0.5s linear both;
 }
 
 @-webkit-keyframes RedBordersOne {
