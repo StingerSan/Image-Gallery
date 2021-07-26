@@ -9,7 +9,7 @@ body {
   background-color: #58514e;
 }
 
-section.frontPage {
+section.FrontPage {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +25,7 @@ section.frontPage {
   z-index: 1;
 }
 
-section.frontPage div {
+section.FrontPage div {
   width: 50vw;
   height: 50vh;
   background-color: black;
@@ -34,19 +34,19 @@ section.frontPage div {
           box-shadow: inset 0px 0px 0px red;
 }
 
-section.frontPage div:nth-of-type(1) {
+section.FrontPage div:nth-of-type(1) {
   border-style: ridge none none ridge;
 }
 
-section.frontPage div:nth-of-type(2) {
+section.FrontPage div:nth-of-type(2) {
   border-style: ridge ridge none none;
 }
 
-section.frontPage div:nth-of-type(3) {
+section.FrontPage div:nth-of-type(3) {
   border-style: none none ridge ridge;
 }
 
-section.frontPage div:nth-of-type(4) {
+section.FrontPage div:nth-of-type(4) {
   border-style: none ridge ridge none;
 }
 
@@ -326,7 +326,7 @@ button:hover {
   }
 }
 
-section {
+section.MainGallery {
   position: fixed;
   left: 0;
   top: 0;
@@ -334,7 +334,7 @@ section {
   height: 100vh;
 }
 
-section div:nth-of-child(1) {
+section.MainGallery div:nth-of-child(1) {
   width: 15vw;
   height: 25vh;
   background-color: #fff;
