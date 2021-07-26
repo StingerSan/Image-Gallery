@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #9b9ec9;
+  background-color: #58514e;
 }
 
 section.frontPage {
@@ -22,6 +22,7 @@ section.frontPage {
       flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 
 section.frontPage div {
@@ -67,7 +68,7 @@ button {
   font-family: 'zen tokyo zoo', cursive;
   text-transform: uppercase;
   letter-spacing: 5px;
-  z-index: 1;
+  z-index: 2;
 }
 
 button:hover {
@@ -323,5 +324,19 @@ button:hover {
     -webkit-box-shadow: 0px 0px 50px red;
             box-shadow: 0px 0px 50px red;
   }
+}
+
+section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+section div:nth-of-child(1) {
+  width: 15vw;
+  height: 25vh;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
