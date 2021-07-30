@@ -22,7 +22,7 @@ section.FrontPage {
       flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
 }
 
 section.FrontPage div {
@@ -68,7 +68,7 @@ button {
   font-family: 'zen tokyo zoo', cursive;
   text-transform: uppercase;
   letter-spacing: 5px;
-  z-index: 2;
+  z-index: 3;
 }
 
 button:hover {
@@ -327,16 +327,36 @@ button:hover {
 }
 
 section.MainGallery {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
 }
 
-section.MainGallery div:nth-of-child(1) {
-  width: 15vw;
-  height: 25vh;
+section.MainGallery img {
+  position: absolute;
+  display: block;
   background-color: #fff;
+  width: 25vw;
+  height: 35vh;
+}
+
+section.MainGallery img:nth-of-type(1) {
+  top: 15%;
+  left: 70%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+section.MainGallery img:nth-of-type(2) {
+  top: 60%;
+  left: 35%;
+}
+
+section.MainGallery img:nth-of-type(3) {
+  top: 35%;
+  left: 10%;
 }
 /*# sourceMappingURL=style.css.map */
