@@ -80,6 +80,11 @@ button:hover {
           transform: translate(-50%, -50%);
 }
 
+.FrontPageAnimation {
+  -webkit-animation: FrontPage 5s 0.5s linear both;
+          animation: FrontPage 5s 0.5s linear both;
+}
+
 .BtnAnimation {
   -webkit-animation: ButtonAnimation 3.5s ease both;
           animation: ButtonAnimation 3.5s ease both;
@@ -327,6 +332,30 @@ button:hover {
   }
 }
 
+@-webkit-keyframes FrontPage {
+  0% {
+    z-index: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+@keyframes FrontPage {
+  0% {
+    z-index: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
 section.MainGallery {
   position: absolute;
   top: 0;
@@ -347,7 +376,10 @@ section.MainGallery img {
 
 section.MainGallery img:nth-of-type(1) {
   top: 15%;
-  left: 70%;
+  left: 65%;
+  width: 30vw;
+  height: 40vh;
+  padding: 10px 10px 30px 10px;
   border: 2px solid rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 2px 2px 4px;
           box-shadow: 2px 2px 4px;
