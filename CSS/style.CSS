@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: #58514e;
-}
-
 section.FrontPage {
   overflow: hidden;
   display: -webkit-box;
@@ -366,7 +362,7 @@ section.MainGallery {
 
 section.MainGallery img {
   position: absolute;
-  background-color: #fff;
+  background-color: white;
   width: 25vw;
   height: 35vh;
   padding: 10px;
