@@ -362,13 +362,9 @@ section.MainGallery {
   background-size: 100vw 100vh;
 }
 
-section.MainGallery img {
-  position: absolute;
-  background-color: white;
-  width: 25vw;
-  height: 35vh;
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
+section.MainGallery img:nth-of-type(1) {
+  width: 30vw;
+  height: 40vh;
 }
 
 section.MainGallery img:nth-of-type(2) {
@@ -391,23 +387,33 @@ section.MainGallery img:nth-of-type(4) {
 section.MainGallery figure {
   position: absolute;
   background-color: white;
-  width: 25vw;
-  height: 35vh;
   padding: 10px;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
 }
 
+section.MainGallery figcaption {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'zen tokyo zoo', cursive;
+}
+
 section.MainGallery figure:nth-of-type(1) {
   top: 15%;
   left: 65%;
-  width: 30vw;
-  height: 40vh;
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 0px 10px;
   border: 2px solid rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 2px 2px 4px;
           box-shadow: 2px 2px 4px;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
+}
+
+section.MainGallery figure:hover {
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border: 2px solid black;
 }
 /*# sourceMappingURL=style.css.map */
