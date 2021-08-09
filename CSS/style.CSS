@@ -362,32 +362,28 @@ section.MainGallery {
   background-size: 100vw 100vh;
 }
 
-section.MainGallery img:nth-of-type(1) {
+section.MainGallery img.One {
   width: 30vw;
   height: 40vh;
 }
 
-section.MainGallery img:nth-of-type(2) {
-  top: 60%;
-  left: 35%;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
+section.MainGallery img.Two {
+  width: 15vw;
+  height: 35vh;
 }
 
-section.MainGallery img:nth-of-type(3) {
-  top: 35%;
-  left: 10%;
-}
-
-section.MainGallery img:nth-of-type(4) {
-  top: 45%;
-  left: 50%;
+section.MainGallery img.Three {
+  width: 30vw;
+  height: 45vh;
 }
 
 section.MainGallery figure {
   position: absolute;
   background-color: white;
   padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 4px;
+          box-shadow: 2px 2px 4px;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
 }
@@ -402,11 +398,22 @@ section.MainGallery figure:nth-of-type(1) {
   top: 15%;
   left: 65%;
   padding: 10px 10px 0px 10px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 2px 2px 4px;
-          box-shadow: 2px 2px 4px;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
+}
+
+section.MainGallery figure:nth-of-type(2) {
+  top: 30%;
+  left: 45%;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+section.MainGallery figure:nth-of-type(3) {
+  top: 25%;
+  left: 30%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 section.MainGallery figure:hover {

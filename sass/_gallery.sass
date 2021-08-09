@@ -14,30 +14,26 @@ section.MainGallery
     //     height: 35vh
     //     // padding: 10px
     //     transition: 0.7s ease
-    img:nth-of-type(1)
-        // top: 15%
-        // left: 65%
+    img.One
         width: 30vw
         height: 40vh
-    //     padding: 10px 10px 30px 10px
-    //     border: 2px solid rgba(0,0 ,0 ,0.5 )
-    //     box-shadow: 2px 2px 4px
-    //     transform: rotate(20deg)
-    img:nth-of-type(2)
-        top: 60%
-        left: 35%
-        transform: rotate(-5deg)
-    img:nth-of-type(3)
-        top: 35%
-        left: 10%
-    img:nth-of-type(4)
-        top: 45%
-        left: 50%
-    img:nth-of-type(5)
+    img.Two
+        width: 15vw
+        height: 35vh
+
+    img.Three
+        width: 30vw
+        height: 45vh
+    // img:nth-of-type(4)
+    //     top: 45%
+    //     left: 50%
+    // img:nth-of-type(5)
     figure
         position: absolute
         background-color: white
         padding: 10px
+        border: 2px solid rgba(0,0 ,0 ,0.5 )
+        box-shadow: 2px 2px 4px
         transition: 0.7s ease
     figcaption
         text-align: center
@@ -47,9 +43,15 @@ section.MainGallery
         top: 15%
         left: 65%
         padding: 10px 10px 0px 10px
-        border: 2px solid rgba(0,0 ,0 ,0.5 )
-        box-shadow: 2px 2px 4px
         transform: rotate(20deg)
+    figure:nth-of-type(2)
+        top: 30%
+        left: 45%
+        transform: rotate(-5deg)
+    figure:nth-of-type(3)
+        top: 25%
+        left: 30%
+        transform: rotate(30deg)
     figure:hover
         z-index: 10
         cursor: pointer
