@@ -1,5 +1,5 @@
 // ***** Beginning of the front page animation *****
-const ButtonClick = document.querySelector('button')
+const ButtonClick = document.querySelector('.Front')
 const DivOne = document.querySelector('div:nth-of-type(1)')
 const DivTwo = document.querySelector('div:nth-of-type(2)')
 const DivThree = document.querySelector('div:nth-of-type(3)')

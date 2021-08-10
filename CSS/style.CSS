@@ -47,7 +47,7 @@ section.FrontPage div:nth-of-type(4) {
   border-style: none ridge ridge none;
 }
 
-button {
+button.Front {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -362,6 +362,25 @@ section.MainGallery {
   background-size: 100vw 100vh;
 }
 
+section.MainGallery span {
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  display: block;
+  color: white;
+  font-family: 'zen tokyo zoo', cursive;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 8vh;
+  border-radius: 20%;
+  width: 12vw;
+  height: 8vh;
+  background-color: black;
+  border: 5px inset white;
+}
+
 section.MainGallery img.One {
   width: 30vw;
   height: 40vh;
@@ -375,6 +394,16 @@ section.MainGallery img.Two {
 section.MainGallery img.Three {
   width: 30vw;
   height: 45vh;
+}
+
+section.MainGallery img.Four {
+  width: 30vw;
+  height: 40vh;
+}
+
+section.MainGallery img.Five {
+  width: 35vw;
+  height: 40vh;
 }
 
 section.MainGallery figure {
@@ -391,19 +420,18 @@ section.MainGallery figure {
 section.MainGallery figcaption {
   text-align: center;
   font-size: 30px;
-  font-family: 'zen tokyo zoo', cursive;
+  font-family: 'atma', cursive;
 }
 
 section.MainGallery figure:nth-of-type(1) {
   top: 15%;
   left: 65%;
-  padding: 10px 10px 0px 10px;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
 }
 
 section.MainGallery figure:nth-of-type(2) {
-  top: 30%;
+  top: 25%;
   left: 45%;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
@@ -414,6 +442,20 @@ section.MainGallery figure:nth-of-type(3) {
   left: 30%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
+}
+
+section.MainGallery figure:nth-of-type(4) {
+  top: 5%;
+  left: 25%;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+section.MainGallery figure:nth-of-type(5) {
+  top: 22%;
+  left: 15%;
+  -webkit-transform: rotate(-21deg);
+          transform: rotate(-21deg);
 }
 
 section.MainGallery figure:hover {
