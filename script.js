@@ -16,3 +16,11 @@ function animation() {
 }
 ButtonClick.addEventListener('click', animation)
 //  ***** End of the front page animation *****
+// ******* Back to pront page ***********
+const SpanClick = document.querySelector('span')
+const BckFrontPage = document.querySelector('.FrontPage')
+
+function animationTwo() {
+    BckFrontPage.classList.add('AnimTrigger')
+}
+SpanClick.addEventListener('click', animationTwo)
