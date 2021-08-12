@@ -7,7 +7,7 @@
 section.FrontPage
     overflow: hidden
     display: flex
-    position: relative
+    position: absolute
     flex-direction: row
     flex-wrap: wrap
     width: 100vw
@@ -121,9 +121,23 @@ button:hover
 @keyframes FrontPage
     0%
         z-index: 1
+        top: 0
     99%
         z-index: 1
+        top: 0
     100%
         z-index: -1
-
+        top: -100%
 //  ***************************************** End of the front page ************************************
+.AnimTrigger
+    animation: BckFrontPage 2s linear
+    @keyframes BckFrontPage
+        0%
+            z-index: -1
+            top: -100%
+        99%
+            z-index: -1
+            top: -100%
+        100%
+            z-index: 10
+            top: 0

@@ -10,7 +10,7 @@ section.FrontPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: absolute;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -331,24 +331,65 @@ button:hover {
 @-webkit-keyframes FrontPage {
   0% {
     z-index: 1;
+    top: 0;
   }
   99% {
     z-index: 1;
+    top: 0;
   }
   100% {
     z-index: -1;
+    top: -100%;
   }
 }
 
 @keyframes FrontPage {
   0% {
     z-index: 1;
+    top: 0;
   }
   99% {
     z-index: 1;
+    top: 0;
   }
   100% {
     z-index: -1;
+    top: -100%;
+  }
+}
+
+.AnimTrigger {
+  -webkit-animation: BckFrontPage 2s linear;
+          animation: BckFrontPage 2s linear;
+}
+
+@-webkit-keyframes BckFrontPage {
+  0% {
+    z-index: -1;
+    top: -100%;
+  }
+  99% {
+    z-index: -1;
+    top: -100%;
+  }
+  100% {
+    z-index: 10;
+    top: 0;
+  }
+}
+
+@keyframes BckFrontPage {
+  0% {
+    z-index: -1;
+    top: -100%;
+  }
+  99% {
+    z-index: -1;
+    top: -100%;
+  }
+  100% {
+    z-index: 10;
+    top: 0;
   }
 }
 
@@ -464,5 +505,9 @@ section.MainGallery figure:hover {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   border: 2px solid black;
+}
+
+section.MainGallery span:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
