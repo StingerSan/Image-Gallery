@@ -359,37 +359,33 @@ button:hover {
 }
 
 .AnimTrigger {
-  -webkit-animation: BckFrontPage 2s linear;
-          animation: BckFrontPage 2s linear;
+  -webkit-animation: BckFrontPage 3s linear both;
+          animation: BckFrontPage 3s linear both;
 }
 
 @-webkit-keyframes BckFrontPage {
   0% {
     z-index: -1;
-    top: -100%;
-  }
-  99% {
-    z-index: -1;
-    top: -100%;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
   }
   100% {
-    z-index: 10;
-    top: 0;
+    z-index: 50;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @keyframes BckFrontPage {
   0% {
     z-index: -1;
-    top: -100%;
-  }
-  99% {
-    z-index: -1;
-    top: -100%;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
   }
   100% {
-    z-index: 10;
-    top: 0;
+    z-index: 50;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 

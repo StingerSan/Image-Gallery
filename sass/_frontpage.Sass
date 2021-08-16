@@ -130,14 +130,11 @@ button:hover
         top: -100%
 //  ***************************************** End of the front page ************************************
 .AnimTrigger
-    animation: BckFrontPage 2s linear
+    animation: BckFrontPage 3s linear both
     @keyframes BckFrontPage
         0%
             z-index: -1
-            top: -100%
-        99%
-            z-index: -1
-            top: -100%
+            transform: translate(0,-100%)
         100%
-            z-index: 10
-            top: 0
+            z-index: 50
+            transform: translate(0,0)
